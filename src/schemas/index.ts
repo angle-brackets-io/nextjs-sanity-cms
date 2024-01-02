@@ -20,4 +20,5 @@ export const schemaTypes = [
   blockContent,
 ]
 
-export const documentTypesForWorkFlow = [page, post]
+// Add name of the document here in quotations so the workflow works find on that name as well
+export const documentTypesForWorkFlow = ['page', 'post']
