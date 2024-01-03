@@ -15,13 +15,13 @@ export default function PreviewItem({
 }: Props) {
   return (
     <div className="m-0">
-      <h3 className="m-0 flex items-center gap-2 p-4 text-lg leading-7">
+      <h3 className="text-lg m-0 flex items-center gap-2 p-4 leading-7">
         {Icon && <Icon className="mb-0.5" />}
         {title}
       </h3>
       <div className="border-gray-300 bg-gray-50 overflow-auto border-b border-r border-t py-6 pl-6">
         <div
-          className="border-gray-300 rounded-lg border bg-white p-4 font-sans"
+          className="border-gray-300 bg-white rounded-lg border p-4 font-sans"
           style={{ width: `${width}px` }}
         >
           {children ?? (

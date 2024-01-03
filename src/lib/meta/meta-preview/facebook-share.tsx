@@ -24,15 +24,15 @@ function FacebookShare({
           <span className='content-["no photo set!"] absolute left-0 right-0 top-1/2 block -translate-y-1/2 transform text-center' />
         )}
       </div>
-      <div className="border-gray-200 border bg-white p-4">
-        <div className="text-gray-500 mb-2 flex-shrink-0 overflow-hidden text-xs font-medium uppercase tracking-wide">
+      <div className="border-gray-200 bg-white border p-4">
+        <div className="text-gray-500 text-xs mb-2 flex-shrink-0 overflow-hidden font-medium uppercase tracking-wide">
           {websiteUrlWithoutProtocol}
         </div>
-        <div className="text-gray-900 truncate text-base font-medium leading-6">
+        <div className="text-gray-900 text-base truncate font-medium leading-6">
           <a>{shareTitle}</a>
         </div>
         {shareDesc && (
-          <div className="text-gray-500 mt-2 max-h-16 truncate text-sm leading-5">
+          <div className="text-gray-500 text-sm mt-2 max-h-16 truncate leading-5">
             {shareDesc}
           </div>
         )}

@@ -23,7 +23,7 @@ export const fragment = groq`
 
 export default function Footer({}) {
   return (
-    <footer className="m-2 rounded bg-primary p-10 tracking-[-.01em] text-primary-light md:m-5 lg:px-15">
+    <footer className="bg-primary text-primary-light lg:px-15 m-2 rounded p-10 tracking-[-.01em] md:m-5">
       footer
     </footer>
   )

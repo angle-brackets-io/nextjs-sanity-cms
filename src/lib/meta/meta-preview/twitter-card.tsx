@@ -28,7 +28,7 @@ function TwitterCard({
           size={32}
         />
         <span className="text-gray-800 mr-1 font-semibold">{name}</span>
-        <span className="text-gray-500 ml-1 mt-1 px-0 text-xs">@{handle}</span>
+        <span className="text-gray-500 text-xs ml-1 mt-1 px-0">@{handle}</span>
       </div>
       <div className="m-0 mb-2">
         <p>Tweet about this...</p>
@@ -48,7 +48,7 @@ function TwitterCard({
             )}
           </div>
           <div className="w-[calc(100%-8.81667em-2px)] overflow-hidden px-3 py-2">
-            <h2 className="m-0 mb-1 max-h-[1.3em] overflow-hidden overflow-ellipsis whitespace-nowrap text-base font-normal">
+            <h2 className="text-base m-0 mb-1 max-h-[1.3em] overflow-hidden overflow-ellipsis whitespace-nowrap font-normal">
               {shareTitle}
             </h2>
             {shareDesc && <div className="text-gray-500">{shareDesc}</div>}

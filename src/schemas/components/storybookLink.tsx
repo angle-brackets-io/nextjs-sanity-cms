@@ -8,7 +8,7 @@ export const StorybookLink = ({ id }: { id: string }) => {
     <Link
       href={getStorybookURL(id)}
       target="_blank"
-      className="block rounded-[3px] border-[1px] border-solid border-[#E7E9EC] bg-white p-1"
+      className="bg-white block rounded-[3px] border-[1px] border-solid border-[#E7E9EC] p-1"
     >
       <Image src="/storybook.svg" width={20} height={20} alt="storybook" />
     </Link>

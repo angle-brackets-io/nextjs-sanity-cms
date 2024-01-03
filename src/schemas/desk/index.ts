@@ -1,8 +1,4 @@
-import {
-  File,
-  Gear,
-  NavigationArrow,
-} from '@phosphor-icons/react'
+import { File, Gear, NavigationArrow } from '@phosphor-icons/react'
 import { StructureResolver } from 'sanity/desk'
 
 import { defaultMetaItem } from '~/lib/meta/schemas/defaultMeta'

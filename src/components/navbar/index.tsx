@@ -18,7 +18,7 @@ export const fragment = groq`
 
 export default function Navbar() {
   return (
-    <div className="fixed inset-0 bottom-auto z-navbar bg-white py-[var(--mobile-padding-y)] transition-all duration-300 md:py-[var(--padding-y)]">
+    <div className="z-navbar bg-white fixed inset-0 bottom-auto py-[var(--mobile-padding-y)] transition-all duration-300 md:py-[var(--padding-y)]">
       navbar
     </div>
   )

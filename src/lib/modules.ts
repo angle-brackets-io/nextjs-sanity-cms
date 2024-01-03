@@ -1,10 +1,7 @@
-
 // import { default as projectsHighlight } from '~/components/example'
 
-
 export const moduleComponents = {
-
-// example
+  // example
 }
 
 export interface IModule {

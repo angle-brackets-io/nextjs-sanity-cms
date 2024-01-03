@@ -28,10 +28,10 @@ export const AddModuleButton = ({
     >
       <Stack
         space={1}
-        className="group rounded-sm border border-storage-medium-light bg-storage-light text-black transition-all duration-200 hover:bg-storage-medium-dark hover:text-white hover:duration-75"
+        className="border-storage-medium-light bg-storage-light text-black hover:bg-storage-medium-dark hover:text-white group rounded-sm border transition-all duration-200 hover:duration-75"
       >
         <Box
-          className="relative border-b border-storage-medium-light bg-white"
+          className="border-storage-medium-light bg-white relative border-b"
           paddingX={3}
         >
           <ModulePreviewIFrame id={id} />

@@ -2,7 +2,6 @@ import { groq } from 'next-sanity'
 
 import { IModule, moduleComponents } from '~/lib/modules'
 
-
 export interface IModuleRenderer {
   modules?: IModule[]
 }
@@ -15,7 +14,6 @@ export const fragment = groq`
 `
 // Declare the below format fragment in above fragment
 // ${projectsHighlightFragment},
-
 
 export default function ModuleRenderer({ modules = [] }: IModuleRenderer) {
   return modules?.map((module) => {
