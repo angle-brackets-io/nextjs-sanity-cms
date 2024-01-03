@@ -10,7 +10,7 @@ export enum PageTypes {
 export function resolveHref(documentType: string, slug?: string) {
   switch (documentType) {
     case PageTypes.Page:
-      return slug ? `/${slug}` : '/'
+      return slug ? (slug === '/' ? slug : `/${slug}`) : '/'
     case PageTypes.Post:
       return slug ? `/blogs/${slug}` : '/blogs/'
     default:

@@ -2,6 +2,8 @@ import { Rule } from 'sanity'
 
 import { metaField, metaGroup } from '~/lib/meta/'
 
+import { getModulesField } from '../modules/modules-field'
+
 export const page = {
   name: 'page',
   title: 'Page',
@@ -27,6 +29,7 @@ export const page = {
       },
       validation: (Rule: Rule) => Rule.required(),
     },
+    getModulesField('content'),
     metaField,
   ],
   preview: {
@@ -37,7 +40,7 @@ export const page = {
     prepare({ title, slug }: Record<string, any>): any {
       return {
         title,
-        subtitle: '/' + slug,
+        subtitle: slug,
       }
     },
   },

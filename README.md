@@ -103,4 +103,18 @@ then move to the [Link](https://localhost:3000/studio) and go to `Site settings`
 
 ### Step 7. Next Step
 
-Do the necessary tailwind configurations and the typography configuarations
+Do the necessary tailwind configurations and the typography configuarations add colors in an object like parent and its child color and also add the spacing in rem and font sizes adn colors like below
+
+```bash
+ primary: {
+        DEFAULT: '#124734',
+        100: '#040E0A',
+        200: '#0B2B1F',
+        300: '#A0B5AE',
+        400: '#D0DAD6',
+      },
+```
+
+### Step 8. Next Step
+
+Add the Home page in sanity cms to make the template functional

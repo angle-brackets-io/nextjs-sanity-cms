@@ -1,4 +1,8 @@
-import { File, Gear, House, NavigationArrow } from '@phosphor-icons/react'
+import {
+  File,
+  Gear,
+  NavigationArrow,
+} from '@phosphor-icons/react'
 import { StructureResolver } from 'sanity/desk'
 
 import { defaultMetaItem } from '~/lib/meta/schemas/defaultMeta'
@@ -17,6 +21,7 @@ export const structureResolver: StructureResolver = (S) => {
             .title('Pages')
             .items([S.documentTypeListItem('page').title('Pages').icon(File)]),
         ),
+      S.divider(),
       S.divider(),
       S.listItem()
         .title('Site Settings')
