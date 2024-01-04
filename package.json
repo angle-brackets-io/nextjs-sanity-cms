@@ -16,7 +16,7 @@
     "generate:icon-list": "node ./scripts/generateIconsList.js",
     "spritegen": "npx svg-sprite -s --symbol-dest public --symbol-sprite sprite.svg icons/*.svg && npm run generate:icon-list",
     "generate:component": "npx hygen component with-prompt",
-    "generate:section": "npx hygen section with-prompt"
+    "generate:module": "npx hygen module with-prompt"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.0.14",

@@ -1,22 +1,22 @@
 ---
-to: src/components/<%= h.changeCase.pascal(name) %>/<%= h.changeCase.pascal(name) %>.jsx
+to: src/components/<%= h.projectCase(name)%>/index.jsx
 ---
-import React from 'react'
-import clsx from 'clsx'
+import { groq } from 'next-sanity'
+import classnames from 'classnames'
 
-export const <%= h.changeCase.pascal(name) %> = ({
-  otherClasses
-}) => {
+export const fragment = groq`
+`
 
-  const <%= h.changeCase.camel(name) %>Classes = clsx(
+export default function <%= h.changeCase.pascal(name) %>({otherClasses}) {
+
+  const <%= h.changeCase.camel(name) %>Classes = classnames(
     otherClasses
   )
   
   return (
     <div className={<%= h.changeCase.camel(name) %>Classes} data-testid='<%= h.changeCase.param(name) %>'>
-      New Component!
+     <%= h.projectCase(name)%> Component!
     </div>
   )
 }
 
-export default <%= h.changeCase.pascal(name) %>

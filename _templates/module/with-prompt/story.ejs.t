@@ -1,10 +1,10 @@
 ---
-to: src/components/<%= h.projectCase(name) %>/<%=  h.projectCase(name) %>.stories.js
+to: src/modules/<%= h.projectCase(name) %>/<%=  h.projectCase(name) %>.stories.js
 ---
-import <%= h.changeCase.pascal(name) %> from './index'
 
+import <%= h.changeCase.pascal(name) %> from './index'
 const meta = {
-  title: 'Components/<%= h.changeCase.pascal(name) %>',
+  title: 'Modules/<%= h.changeCase.pascal(name) %>',
   component: <%= h.changeCase.pascal(name) %>,
   parameters: {
     design: [
@@ -23,6 +23,7 @@ const meta = {
     ],
   },
 }
+
 export default meta;
 
 export const Default = {
